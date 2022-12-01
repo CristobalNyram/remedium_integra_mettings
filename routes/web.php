@@ -15,6 +15,8 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\MiscellaneousController;
 use App\Http\Controllers\AuthenticationController;
 use App\Http\Controllers\ChartsController;
+use App\Http\Controllers\RoleController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,6 +37,28 @@ Auth::routes();
 
 
 Route::group(['middleware'=>'auth'], function(){
+
+    // admin routes start
+    Route::group(['prefix' => 'admin'], function () {
+
+        // catalog  routes start
+        Route::group(['prefix' => 'catalog'], function () {
+
+
+            Route::get('/user/list', [UserController::class, 'index'])->name('user_index');
+
+
+            Route::get('/role/list', [RoleController::class, 'index'])->name('role_index');
+
+
+        });
+        // catalog  routes end
+
+
+
+    });
+    // admin routes end
+
 
 
 
@@ -221,6 +245,7 @@ Route::group(['prefix' => 'chart'], function () {
     Route::get('chartjs', [ChartsController::class, 'chartjs'])->name('chart-chartjs');
     Route::get('echarts', [ChartsController::class, 'echarts'])->name('chart-echarts');
 });
+
 /* Route Charts */
 
 // map leaflet

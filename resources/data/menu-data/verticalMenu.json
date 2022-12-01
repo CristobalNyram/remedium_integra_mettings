@@ -34,13 +34,13 @@
         "slug": "",
         "submenu": [
           {
-            "url": "dashboard/analytics",
+            "url": "admin/catalog/role/list",
             "name": "Roles",
             "icon": "user",
             "slug": "Roles"
           },
           {
-            "url": "app/user/list",
+            "url": "admin/catalog/user/list",
             "name": "Users",
             "icon": "users",
             "slug": "Users"
