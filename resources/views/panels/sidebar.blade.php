@@ -7,7 +7,7 @@ $configData = Helper::applClasses();
       <li class="nav-item mr-auto">
         <a class="navbar-brand" href="{{url('/')}}">
           <span class="brand-logo">
-            <svg viewbox="0 0 139 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="24">
+            {{-- <svg viewbox="0 0 139 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="24">
               <defs>
                 <lineargradient id="linearGradient-1" x1="100%" y1="10.5120544%" x2="50%" y2="89.4879456%">
                   <stop stop-color="#000000" offset="0%"></stop>
@@ -29,9 +29,9 @@ $configData = Helper::applClasses();
                   </g>
                 </g>
               </g>
-            </svg>
+            </svg> --}}
           </span>
-          <h2 class="brand-text">Vuexy</h2>
+          <h2 class="brand-text">Remedium</h2>
         </a>
       </li>
       <li class="nav-item nav-toggle">

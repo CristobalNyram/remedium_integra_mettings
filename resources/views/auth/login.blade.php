@@ -14,7 +14,7 @@
     <div class="card mb-0">
       <div class="card-body">
         <a href="javascript:void(0);" class="brand-logo">
-          <svg viewbox="0 0 139 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="28">
+          {{-- <svg viewbox="0 0 139 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="28">
             <defs>
               <lineargradient id="linearGradient-1" x1="100%" y1="10.5120544%" x2="50%" y2="89.4879456%">
                 <stop stop-color="#000000" offset="0%"></stop>
@@ -36,11 +36,11 @@
                 </g>
               </g>
             </g>
-          </svg>
-          <h2 class="brand-text text-primary ml-1">Vuexy</h2>
+          </svg> --}}
+          <h2 class="brand-text text-primary ml-1">Remedium</h2>
         </a>
 
-        <h4 class="card-title mb-1">Welcome to Vuexy! 👋</h4>
+        <h4 class="card-title mb-1">Welcome to Remedium! 👋</h4>
         <p class="card-text mb-2">Please sign-in to your account and start the adventure</p>
 
         <form class="auth-login-form mt-2" method="POST" action="{{ route('login') }}">
