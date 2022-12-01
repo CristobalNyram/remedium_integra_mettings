@@ -34,7 +34,7 @@ use App\Http\Controllers\ChartsController;
 Auth::routes();
 
 
-Route::group(['prefix' => 'app','middleware'=>'auth'], function(){
+Route::group(['middleware'=>'auth'], function(){
 
 
 
