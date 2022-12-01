@@ -21,6 +21,38 @@
         }
       ]
     }
+    ,
+    {
+      "navheader": "Catalog",
+      "slug": ""
+    },
+    {
+        "name": "Settings",
+        "badge": "10",
+        "badgeClass": "badge badge-light-warning badge-pill ml-auto mr-1",
+        "icon": "settings",
+        "slug": "",
+        "submenu": [
+          {
+            "url": "dashboard/analytics",
+            "name": "Roles",
+            "icon": "user",
+            "slug": "Roles"
+          },
+          {
+            "url": "app/user/list",
+            "name": "Users",
+            "icon": "users",
+            "slug": "Users"
+          },
+          {
+            "url": "/",
+            "name": "Platform",
+            "icon": "tv",
+            "slug": "Platform"
+          }
+        ]
+      }
 
 
   ]
