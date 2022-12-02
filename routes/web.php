@@ -50,7 +50,7 @@ Route::group(['middleware'=>'auth'], function(){
             Route::get('/user/list', [AdminUserController::class, 'index'])->name('user_index');
 
 
-            Route::get('/role/list', [AdminRoleController::class, 'index'])->name('role_index');
+            Route::get('/role/list', [AdminRoleController::class, 'index'])->middleware('can:roles_index')->name('role_index');
 
 
         });
