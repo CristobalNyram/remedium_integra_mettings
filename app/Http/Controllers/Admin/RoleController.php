@@ -18,7 +18,7 @@ class RoleController extends Controller
         $pageConfigs = ['sidebarCollapsed' => false];
         $breadcrumbs = [['link' => "/", 'name' => "Admin"], ['link' => "javascript:void(0)", 'name' => "Role"], ['name' => "List"]];
 
-        $roles_actives=Role::all();
+        $roles_actives=Role::all()->where('status','=','2');
 
         return view('admin.role.index',['pageConfigs'=>$pageConfigs,'breadcrumbs'=>$breadcrumbs,'roles_actives'=>$roles_actives]);
 

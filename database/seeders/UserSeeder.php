@@ -25,7 +25,7 @@ class UserSeeder extends Seeder
             'password' => Hash::make('123456'),
             'created_at' => now(),
             'updated_at' => now(),
-            'remember_token'=>Str::ramdom(6)
+            // 'remember_token'=>Str::ramdom(6)
         ])->assignRole('Super_admin');
 
         User::create([
@@ -35,7 +35,7 @@ class UserSeeder extends Seeder
             'password' => Hash::make('123456'),
             'created_at' => now(),
             'updated_at' => now(),
-            'remember_token'=>Str::ramdom(6)
+            // 'remember_token'=>Str::ramdom(6)
 
         ])->assignRole('Admin');
 
@@ -46,7 +46,7 @@ class UserSeeder extends Seeder
             'password' => Hash::make('123456'),
             'created_at' => now(),
             'updated_at' => now(),
-            'remember_token'=>Str::ramdom(6)
+            // 'remember_token'=>Str::ramdom(6)
 
         ])->assignRole('User');
     }
