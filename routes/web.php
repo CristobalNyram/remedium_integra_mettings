@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\RoleController as AdminRoleController;
+use App\Http\Controllers\Admin\UserController as AdminUserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\DashboardController;
@@ -45,10 +47,10 @@ Route::group(['middleware'=>'auth'], function(){
         Route::group(['prefix' => 'catalog'], function () {
 
 
-            Route::get('/user/list', [UserController::class, 'index'])->name('user_index');
+            Route::get('/user/list', [AdminUserController::class, 'index'])->name('user_index');
 
 
-            Route::get('/role/list', [RoleController::class, 'index'])->name('role_index');
+            Route::get('/role/list', [AdminRoleController::class, 'index'])->name('role_index');
 
 
         });
