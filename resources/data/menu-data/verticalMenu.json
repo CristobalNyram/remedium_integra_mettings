@@ -37,7 +37,7 @@
             "url": "admin/catalog/role/list",
             "name": "Roles",
             "icon": "user",
-            "slug": "Roles"
+            "slug": "admin-catalog-role-list"
           },
           {
             "url": "admin/catalog/user/list",

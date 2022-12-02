@@ -4,16 +4,23 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Spatie\Permission\Models\Role;
 
 class RoleController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('can:role_index')->only('index');
+        $this->middleware('can:roles_index')->only('index');
     }
     public function index()
     {
-        return view('admin.role.index');
+
+        $pageConfigs = ['sidebarCollapsed' => false];
+        $breadcrumbs = [['link' => "/", 'name' => "Admin"], ['link' => "javascript:void(0)", 'name' => "Role"], ['name' => "List"]];
+
+        $roles_actives=Role::all();
+
+        return view('admin.role.index',['pageConfigs'=>$pageConfigs,'breadcrumbs'=>$breadcrumbs,'roles_actives'=>$roles_actives]);
 
     }
 
